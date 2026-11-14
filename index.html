@@ -602,6 +602,21 @@ canvas { pointer-events: none !important; }
   flex-direction: column;
   background-color: #6794C1;
 }
+.tabbar {
+  position: fixed !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  height: auto !important;
+  /* Сверху 8px, по бокам 2px, снизу компактный отступ + безопасная зона */
+  padding: 8px 2px calc(4px + env(safe-area-inset-bottom)) !important;
+  background: #080A09 !important;
+}
+
+.tabbar button {
+  padding: 0 !important;
+  gap: 3px !important;
+}
 
 
 </style>
